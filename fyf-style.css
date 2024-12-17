@@ -1,0 +1,481 @@
+body {
+    font-family: arial;
+    color:white;
+    background-color: black; 
+    /* oude kleur, bewaard voor de specifieke rgb waarden background-image: linear-gradient(rgb(67, 47, 214), blueviolet);*/
+    background-image: linear-gradient(to bottom, #4870f3, #ada3ce);
+    margin:0%;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    font-size: 7em;
+}
+
+/* test
+h4 {
+    border-width: 1em;
+    border-style: solid;
+    border-image: linear-gradient(black, blueviolet);
+}
+*/
+
+/* test met double border
+h4 {
+    background-image: linear-gradient(to top, black, blueviolet);
+    border-image: repeating-linear-gradient(to bottom, black, blueviolet);
+    border-width: 3em;
+    padding: 1em;
+    margin: 0em;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+.gradient-test {
+    height:1em;
+    padding: 0em;
+    margin: 0em;
+    background-color: blue;
+    background-image: linear-gradient(to top, black, blueviolet);
+}
+*/
+
+/* bewaar plekje
+background-color: rgb(67, 47, 214); 
+background-image: linear-gradient(to right, black, blueviolet);
+*/
+
+.h2-tekstje h2 {
+    font-size:3em;
+}
+
+.inroductie-tekst h2 {
+    font-size:3em;
+}
+
+.h2-tekstje {
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+.h2-tekstje p {
+    margin: 20px 0px;
+}
+/*test
+.ouassima-tekst {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    max-width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+
+.ouassima-foto {
+    scale:50%;
+    margin: 0%;
+}
+*/
+.ouassima-tekst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 60%;
+    margin-left: 15%;
+}
+
+.ouassima-foto {
+    width: 40%;
+    height: auto;
+    padding-right: 5%;
+}
+
+.fernando-tekst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 60%;
+    margin-left: 15%;
+}
+
+.fernando-foto {
+    width: 40%;
+    height: auto;
+    padding-left: 5%;
+}
+
+.inroductie-tekst {
+    text-align: left;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+.over-ons-index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.over-ons-foto {
+    width: 25%;
+    height: auto;
+}
+
+.link-naar-afleveringen {
+    font-size: 1.5em;
+}
+
+body a:visited {
+    color: rgb(180, 180, 180);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-family: "Audiowide", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding-left: auto;
+    margin: 0em;
+    list-style-type: none;
+    transition-timing-function: ease;
+  }
+
+nav {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    background-color: rgba(42, 76, 145, 0.5);
+}
+
+/* bron: https://www.technomancy.org/html/css-how-to-select-everything-except-for-the-first-element*/
+nav li:hover:nth-child(n+2) {
+    transform: scale(110%);
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 1s;
+}
+
+nav li:nth-child(n+2) {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+    Padding-bottom: 0%;
+    border-radius: 2em;
+    margin:auto;
+    color: white;
+}
+
+nav img {
+    width: 1.7em;
+    margin: 0 0;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    Padding-right: 5%;
+}
+
+nav li:first-of-type {
+    border:none;
+    padding-left:none;
+    padding-right:none;
+    padding-top:none;
+    padding-bottom:none;
+    background-color: none;
+    justify-content:center;
+    align-self: flex-end;
+    scale:400%;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 175%;
+    color: white;
+}
+
+.nav-link:visited {
+    color: white;
+}
+
+.nav-link:hover {
+    color: black;
+    transition: 1s;
+}
+
+.logo {
+    width:150%;
+    height:auto;
+}
+
+.thumbnail-large {
+        display: flex;
+        width: 50%;
+        height: auto;
+        margin: 2.5% 25%;
+        border-radius: 3vw;
+    }
+
+section h2 {
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+}
+/* test
+
+.thumbnails-list {
+        display: grid;
+        scale:25%;
+        list-style-type: none;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 5%;
+        row-gap: 5%;
+        margin-left: 0;
+        padding:0;
+        
+    }
+.thumbnail-small {
+        padding: 20px;
+        border-radius: 100px;
+        width: 25%;
+        height: auto;
+        max-width: 50%;
+      }
+*/
+
+.thumbnails-list-test {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+        padding-left:none;
+      }
+
+.thumbnails-list-test li {
+    width:25%;
+    padding: 20px 50px;
+}
+
+.thumbnails-list-test h2 {
+    font-family: "Audiowide", sans-serif;
+}
+
+.thumbnail-small-test {
+        border-radius: 1.5vw;
+        width: 100%;
+        height: auto;
+      
+      }
+
+.thumbnail-small-test:hover{
+        transform: scale(105%);
+        transition: 1s;
+    }
+
+.webwinkel-items {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding-left:none;
+  }
+
+.webwinkel-items li {
+width:25%;
+padding: 20px 50px;
+}
+
+.webwinkel-items h2 {
+font-family: "Audiowide", sans-serif;
+}
+
+.winkel-item {
+    border-radius: 1.5vw;
+    width: 100%;
+    height: auto;
+  }
+
+.winkel-item:hover{
+    transform: scale(105%);
+    transition: 1s;
+}
+
+/* test footer
+footer {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    background-color: rgb(180, 180, 180);
+
+    }
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding-left: auto;
+    margin: 0em;
+    list-style-type: none;
+    transition-timing-function: ease;
+      }
+*/
+
+/* ispiratie en deels bron: https://devdevout.com/css/css-footers */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: space-around;
+    background: #ada3ce;
+    background-image: linear-gradient(185deg, #ada3ce, #8171b3);
+    padding: 3rem;
+	padding-top: 5rem; 
+	padding-top: 7rem;
+    padding-bottom: 80px;
+}
+
+#copy-right{
+    padding: 3rem;
+    margin-top: 0px;
+	padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+	background-color: rgba(42, 76, 145);
+
+}
+
+.social-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    
+    }
+    .social-links h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .social-icons{
+        display: flex;
+        gap: 3rem; 
+        flex-direction: column;
+        gap: 1rem;
+        color: #777777;
+    }
+
+    .social-icons li{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .social-icons a{
+        font-size: 18px; 
+        background: #ffffff; 
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        border-radius: 3px;
+        color: #777777;
+    }
+    .social-icons a:hover{
+        color: #000;
+    }
+    .social-icons a {
+        box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        border-radius: 3px;
+        font-size: 16px;
+        margin-right: 12px;
+    }
+    li{
+        list-style: none;
+    }
+
+    .useful-link h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .use-links{
+        line-height: 32px;
+    }
+    .use-links li i{
+        font-size: 14px;
+        padding-right: 8px;
+        color: white;
+    }
+    .use-links li a{
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+    }
+    .use-links li a:hover{
+        color: #000;
+    }
+
+    .logo-en-tekst {
+        display: flex;
+        gap: 3rem; 
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: white;
+        width: 15em;
+    }
+.img-logo-footer {
+    width: 100%;
+    margin: 0 0;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    Padding-right: 5%;
+}
+
+.social-icon{
+    width: 2em;
+    height: 2em;
+    margin: 0 0;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    Padding-right: 5%;
+    
+}
+
+
+
+/* oude tests
+
+  /* test hieronder 
+  
+  .thumbnail-grid {
+    display: grid;
+    scale:20%;
+    list-style-type: none;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  *

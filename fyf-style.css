@@ -143,7 +143,6 @@ header {
 nav ul {
     display: flex;
     justify-content: center;
-    padding-left: auto;
     margin: 0em;
     list-style-type: none;
     transition-timing-function: ease;
@@ -159,7 +158,7 @@ nav {
 
 /* bron: https://www.technomancy.org/html/css-how-to-select-everything-except-for-the-first-element*/
 nav li:hover:nth-child(n+2) {
-    transform: scale(110%);
+    transform: scale(1.1);
     padding-left: 5%;
     padding-right: 5%;
     transition: 1s;
@@ -186,11 +185,11 @@ nav img {
 
 nav li:first-of-type {
     border:none;
-    padding-left:none;
-    padding-right:none;
-    padding-top:none;
-    padding-bottom:none;
-    background-color: none;
+    padding-left:0;
+    padding-right:0;
+    padding-top:0;
+    padding-bottom:0;
+    background-color: transparent;
     justify-content:center;
     align-self: flex-end;
     scale:400%;
@@ -255,7 +254,7 @@ section h2 {
         display: flex;
         list-style-type: none;
         flex-wrap: wrap;
-        padding-left:none;
+        padding-left:0;
       }
 
 .thumbnails-list-test li {
@@ -275,7 +274,7 @@ section h2 {
       }
 
 .thumbnail-small-test:hover{
-        transform: scale(105%);
+        transform: scale(1.05);
         transition: 1s;
     }
 
@@ -302,7 +301,7 @@ font-family: "Audiowide", sans-serif;
   }
 
 .winkel-item:hover{
-    transform: scale(105%);
+    transform: scale(1.05);
     transition: 1s;
 }
 
